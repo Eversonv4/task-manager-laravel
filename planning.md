@@ -16,10 +16,10 @@
 
 2 - Detalhes das migrations
 
-  Usuário: 
+  Usuário: (table name: users)
     - seguir o padrão do laravel
 
-  Tarefa:
+  Tarefa: (table name: tasks)
     - id
     - titulo
     - data
@@ -27,7 +27,7 @@
     - categoria_id
     - user_id
 
-  Categoria:
+  Categoria: (table name: categories)
     - id
     - nome
     - cor (hexadecimal)
