@@ -3,8 +3,9 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use Database\Factories\CategoryFactory;
-use Database\Factories\TaskFactory;
+use App\Models\User;
+use App\Models\Category;
+use App\Models\Task;
 use Database\Seeders\CreateUserSeeder;
 use Illuminate\Database\Seeder;
 
@@ -21,13 +22,17 @@ class DatabaseSeeder extends Seeder
     //     'name' => 'Test User',
     //     'email' => 'test@example.com',
     // ]);
+
+    /*
     $this->call([
       CreateUserSeeder::class,
-      // CreateCategoriesSeeder::class,
-      // CreateTaskSeeder::class,
+      CreateCategoriesSeeder::class,
+      CreateTaskSeeder::class,
     ]);
+    */
 
-    CategoryFactory::factory(5)->create();
-    TaskFactory::factory(5)->create();
+    User::factory(5)->create();
+    Category::factory(5)->create();
+    Task::factory(5)->create();
   }
 }
